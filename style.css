@@ -1,32 +1,77 @@
+/* Basic Reset */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #f5f5f5;
-  font-weight: bold;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-.app {
-  text-align: center;
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
 }
 
-#color-input {
-  padding: 0.5em;
-  width: 200px;
+h1 {
+    color: #333;
+    margin-bottom: 25px;
 }
 
-#apply-btn {
-  padding: 0.5em 1em;
-  margin-left: 0.5em;
-  cursor: pointer;
+.quote-display {
+    background-color: #e9e9e9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    min-height: 100px; /* Ensure space even for short quotes */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#box {
-  margin-top: 1em;
-  width: 150px;
-  height: 150px;
-  background: #ddd;
-  border: 1px solid #aaa;
+#quote-text {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+#quote-author {
+    font-size: 1em;
+    color: #777;
+    text-align: right;
+}
+
+button {
+    /* *** Change background color *** */
+    background-color: #5c67f2; /* Blue */ /* MODIFIED LINE */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+     /* *** Adjust hover color *** */
+    background-color: #0e3268; /* Darker Blue */ /* MODIFIED LINE */
+}
+
+button:active {
+     /* *** Adjust active color *** */
+    background-color: #061547; /* Even Darker Blue */ /* MODIFIED LINE */
 }
